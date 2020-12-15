@@ -6,7 +6,7 @@ const Chart = () => {
   return (
     <>
     <p>Top 20!</p>
-    <Song />
+    <Song artist = "Mariah Carey">All I want for Christmas</Song>
     </>
   )
 
