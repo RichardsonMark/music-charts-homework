@@ -1,11 +1,11 @@
 
 
-const Song = ({artist, children}) => {
-
+const Song = ({title, artist, chartpos}) => {
     return (
         <>
-        <h4>{children}</h4>
+        <h4>{title}</h4>
         <p>{artist}</p>
+        <p>{chartpos}</p>
         </>
     )
   

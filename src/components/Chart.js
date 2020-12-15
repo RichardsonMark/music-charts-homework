@@ -1,12 +1,23 @@
 import Song from "./Song";
 
 
-const Chart = () => {
+const Chart = ({chart}) => {
+
+    const chartNodes = chart.map((entry) => {
+        let title = entry["im:name"].label;
+        let artist = entry["im:artist"].label;
+        let chartpos = chart.indexOf(entry);
+        
+        return (
+            <Song title={title} artist={artist} chartpos={chartpos} key={chartpos} />
+        )
+    })
 
   return (
     <>
-    <p>Top 20!</p>
-    <Song artist = "Mariah Carey">All I want for Christmas</Song>
+    <ul>
+        {chartNodes}
+    </ul>
     </>
   )
 
