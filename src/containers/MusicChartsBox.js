@@ -1,5 +1,7 @@
 import {useState, useEffect} from "react";
 import Chart from "../components/Chart";
+import './MusicChartsBox.css'
+
 
 const MusicChartsBox = () => {
 
@@ -24,10 +26,10 @@ const MusicChartsBox = () => {
     if (!chart) return null;
 
   return (
-      <>
-    <h1>iTunes music charts top 20!</h1>
-    <Chart chart={chart.feed.entry} />
-    </>
+      <div className="charts-box">
+          <h1>iTunes music charts top 20!</h1>
+          <Chart chart={chart.feed.entry} />
+      </div>
   );
 
 }

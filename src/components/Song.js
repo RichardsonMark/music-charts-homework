@@ -1,12 +1,14 @@
+import './Song.css'
 
 
-const Song = ({title, artist, chartpos}) => {
+const Song = ({title, artist, covimg, chartpos}) => {
     return (
-        <>
-        <h4>{title}</h4>
-        <p>{artist}</p>
-        <p>{chartpos}</p>
-        </>
+        <div className="song-item">
+        <h1>{title}</h1>
+        <h2>{artist}</h2>
+        <img src={covimg} alt="image" />
+        <p>Chart Pos: {chartpos}</p>
+        </div>
     )
   
   }

@@ -1,0 +1,8 @@
+.charts-box {
+    width: 600px;
+    margin: 10px auto;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }

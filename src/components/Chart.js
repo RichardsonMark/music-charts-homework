@@ -1,5 +1,5 @@
 import Song from "./Song";
-
+import './Chart.css'
 
 const Chart = ({chart}) => {
 
@@ -7,18 +7,19 @@ const Chart = ({chart}) => {
         let title = entry["im:name"].label;
         let artist = entry["im:artist"].label;
         let chartpos = chart.indexOf(entry);
+        let covimg = entry["im:image"][0].label;
         
         return (
-            <Song title={title} artist={artist} chartpos={chartpos + 1} key={chartpos} />
+            <Song title={title} artist={artist} chartpos={chartpos + 1} covimg={covimg} key={chartpos} />
         )
     })
 
   return (
-    <>
+    <div className="chart-list">
     <ul>
         {chartNodes}
     </ul>
-    </>
+    </div>
   )
 
 }
