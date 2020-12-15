@@ -1,9 +1,11 @@
 import './App.css';
+import MusicChartsBox from "./containers/MusicChartsBox";
+
 
 function App() {
   return (
     <>
-    <h1>Hello World</h1>
+    <MusicChartsBox />
     </>
   );
 }
