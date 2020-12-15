@@ -9,7 +9,7 @@ const Chart = ({chart}) => {
         let chartpos = chart.indexOf(entry);
         
         return (
-            <Song title={title} artist={artist} chartpos={chartpos} key={chartpos} />
+            <Song title={title} artist={artist} chartpos={chartpos + 1} key={chartpos} />
         )
     })
 
